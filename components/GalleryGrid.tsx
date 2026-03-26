@@ -14,70 +14,42 @@ type GalleryItem = {
 const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80',
-    alt: 'HVAC technician performing system inspection and maintenance',
+    src: '/gallery/system-inspection.avif',
+    alt: 'HVAC technician performing system inspection on mini-split unit',
     caption: 'System Inspection',
     category: 'Maintenance',
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-    alt: 'Outdoor air conditioning condensing unit installation',
+    src: '/gallery/ac-installation.avif',
+    alt: 'Technician installing a mini-split air conditioning unit',
     caption: 'AC Unit Installation',
     category: 'Installation',
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80',
-    alt: 'HVAC professional working on residential heating system',
-    caption: 'Heating System Repair',
-    category: 'Repair',
-  },
-  {
-    id: 4,
-    src: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80',
-    alt: 'Smart thermostat installation in modern home',
+    src: '/gallery/thermostat-upgrade.avif',
+    alt: 'Nest smart thermostat installed on wall showing temperature',
     caption: 'Thermostat Upgrade',
     category: 'Installation',
   },
   {
-    id: 5,
-    src: 'https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=800&q=80',
-    alt: 'HVAC ductwork and ventilation system installation in residential property',
+    id: 4,
+    src: '/gallery/ductwork-airflow.avif',
+    alt: 'Large commercial HVAC ductwork and ventilation pipes',
     caption: 'Ductwork & Airflow',
     category: 'Installation',
   },
   {
-    id: 6,
-    src: 'https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?w=800&q=80',
-    alt: 'High-efficiency HVAC system installation completed',
+    id: 5,
+    src: '/gallery/high-efficiency-system.avif',
+    alt: 'Rooftop high-efficiency HVAC cooling units on commercial building',
     caption: 'High-Efficiency System',
     category: 'Installation',
   },
-  {
-    id: 7,
-    src: 'https://images.unsplash.com/photo-1527689638836-411945a2b57c?w=800&q=80',
-    alt: 'Smart programmable thermostat displaying energy savings on wall',
-    caption: 'Smart Thermostat Setup',
-    category: 'Installation',
-  },
-  {
-    id: 8,
-    src: 'https://images.unsplash.com/photo-1596003906949-67221c37965c?w=800&q=80',
-    alt: 'HVAC diagnostic equipment and system performance testing',
-    caption: 'System Diagnostics',
-    category: 'Diagnostics',
-  },
-  {
-    id: 9,
-    src: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
-    alt: 'HVAC technician performing seasonal tune-up and preventive maintenance on outdoor unit',
-    caption: 'Seasonal Tune-Up',
-    category: 'Maintenance',
-  },
 ];
 
-const CATEGORIES = ['All', 'Installation', 'Repair', 'Maintenance', 'Diagnostics'];
+const CATEGORIES = ['All', 'Installation', 'Maintenance'];
 
 export default function GalleryGrid() {
   const [activeCategory, setActiveCategory] = useState('All');
