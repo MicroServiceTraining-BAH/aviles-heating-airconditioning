@@ -34,6 +34,13 @@ const GALLERY_ITEMS: GalleryItem[] = [
     category: 'Installation',
   },
   {
+    id: 6,
+    src: '/gallery/heating-repair.avif',
+    alt: 'HVAC technician repairing a residential heating and furnace system',
+    caption: 'Heating System Repair',
+    category: 'Repair',
+  },
+  {
     id: 4,
     src: '/gallery/ductwork-airflow.avif',
     alt: 'Large commercial HVAC ductwork and ventilation pipes',
@@ -49,7 +56,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   },
 ];
 
-const CATEGORIES = ['All', 'Installation', 'Maintenance'];
+const CATEGORIES = ['All', 'Installation', 'Repair', 'Maintenance'];
 
 export default function GalleryGrid() {
   const [activeCategory, setActiveCategory] = useState('All');
