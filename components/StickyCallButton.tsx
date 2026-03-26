@@ -3,10 +3,7 @@ const PHONE_HREF = 'tel:+15716658027';
 
 export default function StickyCallButton() {
   return (
-    <div
-      className="fixed bottom-0 left-0 right-0 z-50 md:hidden"
-      aria-label="Quick call button"
-    >
+    <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden" aria-label="Quick call button">
       <a
         href={PHONE_HREF}
         className="flex items-center justify-center gap-3 w-full bg-accent text-white font-outfit font-bold text-base py-4 hover:bg-red-600 transition-colors duration-200 shadow-lg shadow-accent/30 min-h-[60px]"

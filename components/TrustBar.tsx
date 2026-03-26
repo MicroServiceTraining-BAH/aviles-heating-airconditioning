@@ -50,7 +50,9 @@ export default function TrustBar() {
                 {icon}
               </div>
               <div>
-                <p className={`font-outfit font-bold text-sm sm:text-base text-primary leading-tight`}>
+                <p
+                  className={`font-outfit font-bold text-sm sm:text-base text-primary leading-tight`}
+                >
                   {value}
                 </p>
                 <p className="text-slate-500 text-xs sm:text-sm font-outfit leading-tight mt-0.5">

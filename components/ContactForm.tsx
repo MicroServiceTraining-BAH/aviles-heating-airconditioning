@@ -106,18 +106,12 @@ export default function ContactForm() {
         <h3 className="font-outfit font-bold text-primary text-2xl">Request Sent!</h3>
         <p className="text-slate-500 font-outfit text-base max-w-sm">
           Thank you! Eric will be in touch shortly. For urgent needs, call directly at{' '}
-          <a
-            href="tel:+15716658027"
-            className="text-accent font-semibold hover:underline"
-          >
+          <a href="tel:+15716658027" className="text-accent font-semibold hover:underline">
             (571) 665-8027
           </a>
           .
         </p>
-        <button
-          onClick={() => setStatus('idle')}
-          className="btn-secondary mt-2"
-        >
+        <button onClick={() => setStatus('idle')} className="btn-secondary mt-2">
           Send Another Request
         </button>
       </div>
@@ -135,7 +129,10 @@ export default function ContactForm() {
         {/* Name */}
         <div className="flex flex-col gap-1.5">
           <label htmlFor="name" className="field-label">
-            Full Name <span className="text-accent" aria-hidden="true">*</span>
+            Full Name{' '}
+            <span className="text-accent" aria-hidden="true">
+              *
+            </span>
           </label>
           <input
             id="name"
@@ -161,7 +158,10 @@ export default function ContactForm() {
         {/* Phone */}
         <div className="flex flex-col gap-1.5">
           <label htmlFor="phone" className="field-label">
-            Phone Number <span className="text-accent" aria-hidden="true">*</span>
+            Phone Number{' '}
+            <span className="text-accent" aria-hidden="true">
+              *
+            </span>
           </label>
           <input
             id="phone"
@@ -188,7 +188,10 @@ export default function ContactForm() {
       {/* Email */}
       <div className="flex flex-col gap-1.5">
         <label htmlFor="email" className="field-label">
-          Email Address <span className="text-accent" aria-hidden="true">*</span>
+          Email Address{' '}
+          <span className="text-accent" aria-hidden="true">
+            *
+          </span>
         </label>
         <input
           id="email"
@@ -214,7 +217,10 @@ export default function ContactForm() {
       {/* Service */}
       <div className="flex flex-col gap-1.5">
         <label htmlFor="service" className="field-label">
-          Service Needed <span className="text-accent" aria-hidden="true">*</span>
+          Service Needed{' '}
+          <span className="text-accent" aria-hidden="true">
+            *
+          </span>
         </label>
         <select
           id="service"
@@ -244,7 +250,10 @@ export default function ContactForm() {
       {/* Message */}
       <div className="flex flex-col gap-1.5">
         <label htmlFor="message" className="field-label">
-          Describe Your Issue <span className="text-accent" aria-hidden="true">*</span>
+          Describe Your Issue{' '}
+          <span className="text-accent" aria-hidden="true">
+            *
+          </span>
         </label>
         <textarea
           id="message"
@@ -291,10 +300,7 @@ export default function ContactForm() {
 
       <p className="text-center text-slate-400 text-xs font-outfit">
         For immediate help, call{' '}
-        <a
-          href="tel:+15716658027"
-          className="text-accent font-semibold hover:underline"
-        >
+        <a href="tel:+15716658027" className="text-accent font-semibold hover:underline">
           (571) 665-8027
         </a>{' '}
         — available 24/7.
@@ -305,7 +311,18 @@ export default function ContactForm() {
 
 function CheckIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#16a34a"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <polyline points="20 6 9 17 4 12" />
     </svg>
   );
@@ -313,7 +330,19 @@ function CheckIcon() {
 
 function SpinnerIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="animate-spin" aria-hidden="true">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="animate-spin"
+      aria-hidden="true"
+    >
       <path d="M21 12a9 9 0 1 1-6.219-8.56" />
     </svg>
   );
@@ -321,7 +350,18 @@ function SpinnerIcon() {
 
 function SendIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <line x1="22" y1="2" x2="11" y2="13" />
       <polygon points="22 2 15 22 11 13 2 9 22 2" />
     </svg>

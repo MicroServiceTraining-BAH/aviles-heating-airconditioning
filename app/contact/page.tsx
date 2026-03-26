@@ -54,8 +54,8 @@ export default function ContactPage() {
             <span className="text-accent-cool">SERVICE TODAY</span>
           </h1>
           <p className="text-slate-300 font-outfit text-lg max-w-xl leading-relaxed">
-            For fastest response, call directly. Or fill out the form and Eric will
-            get back to you quickly—usually within the hour.
+            For fastest response, call directly. Or fill out the form and Eric will get back to you
+            quickly—usually within the hour.
           </p>
         </div>
       </section>
@@ -65,11 +65,10 @@ export default function ContactPage() {
         <div className="container-xl">
           <div className="grid sm:grid-cols-3 gap-5">
             {CONTACT_CARDS.map(({ label, value, detail, href, icon, accent, cta }) => (
-              <div
-                key={label}
-                className={`card p-6 border-t-4 ${accent}`}
-              >
-                <div className="text-secondary mb-3" aria-hidden="true">{icon}</div>
+              <div key={label} className={`card p-6 border-t-4 ${accent}`}>
+                <div className="text-secondary mb-3" aria-hidden="true">
+                  {icon}
+                </div>
                 <p className="text-xs font-outfit font-semibold text-slate-400 uppercase tracking-wide mb-1">
                   {label}
                 </p>
@@ -97,15 +96,11 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-5 gap-10 items-start">
             {/* Left: Form */}
             <div className="lg:col-span-3">
-              <h2
-                id="contact-form-heading"
-                className="section-title text-2xl sm:text-3xl mb-2"
-              >
+              <h2 id="contact-form-heading" className="section-title text-2xl sm:text-3xl mb-2">
                 Send a Service Request
               </h2>
               <p className="text-slate-500 font-outfit text-sm mb-6">
-                Fill out the form and Eric will respond promptly. For immediate emergencies,
-                call{' '}
+                Fill out the form and Eric will respond promptly. For immediate emergencies, call{' '}
                 <a href="tel:+15716658027" className="text-accent font-semibold">
                   (571) 665-8027
                 </a>
@@ -132,7 +127,17 @@ export default function ContactPage() {
                         className="flex-shrink-0 w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mt-0.5"
                         aria-hidden="true"
                       >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11"
+                          height="11"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#16a34a"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
                           <polyline points="20 6 9 17 4 12" />
                         </svg>
                       </span>
@@ -161,8 +166,8 @@ export default function ContactPage() {
                       Emergency? Call now.
                     </p>
                     <p className="text-slate-400 text-xs font-outfit mt-0.5">
-                      Eric is available 24 hours a day, 7 days a week—including all
-                      holidays. No after-hours surcharge.
+                      Eric is available 24 hours a day, 7 days a week—including all holidays. No
+                      after-hours surcharge.
                     </p>
                   </div>
                 </div>
@@ -187,7 +192,18 @@ export default function ContactPage() {
 
 function PhoneIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
     </svg>
   );
@@ -195,7 +211,18 @@ function PhoneIcon() {
 
 function MapPinIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
       <circle cx="12" cy="10" r="3" />
     </svg>
@@ -204,7 +231,18 @@ function MapPinIcon() {
 
 function ClockIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <circle cx="12" cy="12" r="10" />
       <polyline points="12 6 12 12 16 14" />
     </svg>

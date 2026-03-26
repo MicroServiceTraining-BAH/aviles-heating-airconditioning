@@ -3,10 +3,7 @@ const PHONE_HREF = 'tel:+15716658027';
 
 export default function EmergencyCTA() {
   return (
-    <section
-      className="relative bg-accent overflow-hidden"
-      aria-labelledby="emergency-cta-heading"
-    >
+    <section className="relative bg-accent overflow-hidden" aria-labelledby="emergency-cta-heading">
       {/* Background pattern */}
       <div
         className="absolute inset-0 opacity-10"
@@ -23,7 +20,10 @@ export default function EmergencyCTA() {
           {/* Text */}
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-1.5 mb-4">
-              <span className="inline-block w-2 h-2 bg-white rounded-full animate-pulse" aria-hidden="true" />
+              <span
+                className="inline-block w-2 h-2 bg-white rounded-full animate-pulse"
+                aria-hidden="true"
+              />
               <span className="text-white text-xs font-outfit font-semibold tracking-widest uppercase">
                 Open 24 Hours
               </span>
@@ -37,8 +37,8 @@ export default function EmergencyCTA() {
               <span className="text-white/80">WE&apos;RE ALWAYS ON CALL.</span>
             </h2>
             <p className="text-white/85 font-outfit text-base sm:text-lg max-w-xl leading-relaxed">
-              Heating out in January? AC down in August? Don&apos;t suffer through it.
-              Call Eric directly—24 hours a day, 7 days a week, including holidays.
+              Heating out in January? AC down in August? Don&apos;t suffer through it. Call Eric
+              directly—24 hours a day, 7 days a week, including holidays.
             </p>
           </div>
 

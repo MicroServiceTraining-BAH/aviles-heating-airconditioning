@@ -26,13 +26,8 @@ export default function AboutSection() {
             {/* Stat grid */}
             <div className="grid grid-cols-2 gap-4">
               {HIGHLIGHTS.map(({ value, label }) => (
-                <div
-                  key={label}
-                  className="bg-primary rounded-xl p-6 flex flex-col gap-2"
-                >
-                  <span className="font-bebas text-4xl text-accent-cool leading-none">
-                    {value}
-                  </span>
+                <div key={label} className="bg-primary rounded-xl p-6 flex flex-col gap-2">
+                  <span className="font-bebas text-4xl text-accent-cool leading-none">{value}</span>
                   <span className="text-slate-400 text-xs font-outfit font-medium leading-tight">
                     {label}
                   </span>
@@ -46,8 +41,8 @@ export default function AboutSection() {
                 <QuoteIcon />
               </div>
               <blockquote className="text-white text-sm font-outfit italic leading-relaxed">
-                &ldquo;He was willing to talk to me even though he was already home
-                with his family.&rdquo;
+                &ldquo;He was willing to talk to me even though he was already home with his
+                family.&rdquo;
               </blockquote>
             </div>
           </div>
@@ -55,10 +50,7 @@ export default function AboutSection() {
           {/* Right: Content */}
           <div className="order-1 lg:order-2">
             <p className="section-label mb-3">About Eric</p>
-            <h2
-              id="about-heading"
-              className="section-title text-3xl sm:text-4xl lg:text-5xl mb-6"
-            >
+            <h2 id="about-heading" className="section-title text-3xl sm:text-4xl lg:text-5xl mb-6">
               Your Neighbor.
               <br />
               <span className="text-secondary">Your HVAC Expert.</span>
@@ -66,20 +58,18 @@ export default function AboutSection() {
 
             <div className="space-y-4 text-slate-600 font-outfit text-base leading-relaxed mb-8">
               <p>
-                Eric Aviles founded Aviles Heating &amp; Air Conditioning on a simple
-                principle: every homeowner in Northern Virginia deserves honest, expert
-                HVAC service at a price that&apos;s fair.
+                Eric Aviles founded Aviles Heating &amp; Air Conditioning on a simple principle:
+                every homeowner in Northern Virginia deserves honest, expert HVAC service at a price
+                that&apos;s fair.
               </p>
               <p>
-                With deep hands-on experience and a genuine commitment to his customers,
-                Eric has earned a 4.9-star reputation built entirely on word of mouth and
-                verified reviews. He shows up when he says he will—and he gets the job
-                done right the first time.
+                With deep hands-on experience and a genuine commitment to his customers, Eric has
+                earned a 4.9-star reputation built entirely on word of mouth and verified reviews.
+                He shows up when he says he will—and he gets the job done right the first time.
               </p>
               <p>
-                Whether you need an emergency repair at midnight or a scheduled
-                maintenance visit, Eric brings the same level of care, knowledge, and
-                professionalism to every call.
+                Whether you need an emergency repair at midnight or a scheduled maintenance visit,
+                Eric brings the same level of care, knowledge, and professionalism to every call.
               </p>
             </div>
 

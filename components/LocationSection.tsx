@@ -36,23 +36,15 @@ const SERVICE_AREAS = [
 
 export default function LocationSection() {
   return (
-    <section
-      className="section-padding bg-bg-light"
-      aria-labelledby="location-heading"
-    >
+    <section className="section-padding bg-bg-light" aria-labelledby="location-heading">
       <div className="container-xl">
         <div className="text-center mb-12">
           <p className="section-label mb-3">Find Us</p>
-          <h2
-            id="location-heading"
-            className="section-title text-3xl sm:text-4xl lg:text-5xl mb-4"
-          >
-            Serving All of{' '}
-            <span className="text-secondary">Northern Virginia</span>
+          <h2 id="location-heading" className="section-title text-3xl sm:text-4xl lg:text-5xl mb-4">
+            Serving All of <span className="text-secondary">Northern Virginia</span>
           </h2>
           <p className="text-slate-500 font-outfit text-base max-w-xl mx-auto">
-            Based in Herndon, VA — we serve homeowners and families across all of
-            Northern Virginia.
+            Based in Herndon, VA — we serve homeowners and families across all of Northern Virginia.
           </p>
         </div>
 
@@ -94,9 +86,7 @@ export default function LocationSection() {
 
             {/* Service areas */}
             <div className="card p-6">
-              <h3 className="font-outfit font-bold text-primary text-base mb-4">
-                Service Areas
-              </h3>
+              <h3 className="font-outfit font-bold text-primary text-base mb-4">Service Areas</h3>
               <div className="flex flex-wrap gap-2">
                 {SERVICE_AREAS.map((area) => (
                   <span
@@ -134,7 +124,18 @@ export default function LocationSection() {
 
 function MapPinIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
       <circle cx="12" cy="10" r="3" />
     </svg>
@@ -143,7 +144,18 @@ function MapPinIcon() {
 
 function PhoneIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
     </svg>
   );
@@ -151,7 +163,18 @@ function PhoneIcon() {
 
 function ClockIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <circle cx="12" cy="12" r="10" />
       <polyline points="12 6 12 12 16 14" />
     </svg>

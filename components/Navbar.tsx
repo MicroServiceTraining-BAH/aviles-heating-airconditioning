@@ -45,9 +45,7 @@ export default function Navbar() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled || menuOpen
-            ? 'bg-primary shadow-lg shadow-black/20'
-            : 'bg-transparent'
+          scrolled || menuOpen ? 'bg-primary shadow-lg shadow-black/20' : 'bg-transparent'
         }`}
       >
         <div className="container-xl">
@@ -78,9 +76,7 @@ export default function Navbar() {
                   key={href}
                   href={href}
                   className={`text-sm font-outfit font-medium transition-colors duration-150 ${
-                    pathname === href
-                      ? 'text-accent-cool'
-                      : 'text-slate-300 hover:text-white'
+                    pathname === href ? 'text-accent-cool' : 'text-slate-300 hover:text-white'
                   }`}
                 >
                   {label}

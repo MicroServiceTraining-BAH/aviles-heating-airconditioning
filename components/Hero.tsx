@@ -17,8 +17,7 @@ export default function Hero() {
         className="absolute top-0 right-0 w-1/2 h-full opacity-10"
         aria-hidden="true"
         style={{
-          background:
-            'linear-gradient(135deg, transparent 40%, rgba(56,189,248,0.15) 100%)',
+          background: 'linear-gradient(135deg, transparent 40%, rgba(56,189,248,0.15) 100%)',
         }}
       />
 
@@ -33,7 +32,10 @@ export default function Hero() {
         <div className="max-w-4xl">
           {/* Pre-headline badge */}
           <div className="hero-animate inline-flex items-center gap-2 bg-accent/15 border border-accent/30 rounded-full px-4 py-2 mb-6">
-            <span className="inline-block w-2 h-2 rounded-full bg-accent animate-pulse-slow" aria-hidden="true" />
+            <span
+              className="inline-block w-2 h-2 rounded-full bg-accent animate-pulse-slow"
+              aria-hidden="true"
+            />
             <span className="text-accent text-xs font-outfit font-semibold tracking-[0.15em] uppercase">
               24/7 Emergency Service Available
             </span>
@@ -41,17 +43,16 @@ export default function Hero() {
 
           {/* Main headline */}
           <h1 className="hero-animate-delay-1 font-bebas text-6xl sm:text-8xl lg:text-[7rem] text-white leading-none tracking-wide mb-4">
-            HERNDON&apos;S{' '}
-            <span className="text-accent-cool">TRUSTED</span>
+            HERNDON&apos;S <span className="text-accent-cool">TRUSTED</span>
             <br />
             HVAC EXPERT
           </h1>
 
           {/* Subheadline */}
           <p className="hero-animate-delay-2 text-slate-300 text-lg sm:text-xl font-outfit font-light max-w-2xl leading-relaxed mb-8 text-balance">
-            Fast, reliable heating &amp; air conditioning repair when you need it most.
-            Serving Herndon, Reston, Sterling &amp; all of Northern Virginia with
-            honest pricing and expert workmanship.
+            Fast, reliable heating &amp; air conditioning repair when you need it most. Serving
+            Herndon, Reston, Sterling &amp; all of Northern Virginia with honest pricing and expert
+            workmanship.
           </p>
 
           {/* CTA buttons */}
@@ -64,10 +65,7 @@ export default function Hero() {
               <PhoneIcon />
               Call Now — {PHONE}
             </a>
-            <Link
-              href="/contact"
-              className="btn-outline text-base px-8 py-4 text-center"
-            >
+            <Link href="/contact" className="btn-outline text-base px-8 py-4 text-center">
               Request Service
               <ArrowIcon />
             </Link>
@@ -81,10 +79,7 @@ export default function Hero() {
               { value: 'Fast', label: 'Response Times', color: 'text-accent' },
               { value: 'Fair', label: 'Honest Pricing', color: 'text-green-400' },
             ].map(({ value, label, color }) => (
-              <div
-                key={label}
-                className="flex flex-col gap-0.5 border-l-2 border-white/10 pl-4"
-              >
+              <div key={label} className="flex flex-col gap-0.5 border-l-2 border-white/10 pl-4">
                 <span className={`font-bebas text-2xl sm:text-3xl ${color} leading-none`}>
                   {value}
                 </span>
